@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+        font-family:"idroif";
+        src: url('extras/idroid.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;}
+:root{
+    --cor0: #ffffff;
+    --cor1: #90ee90;
+    --cor2: #1fb86c;
+    --cor3: #12653c;
+    --cor4: #034323;
+}
+*{
+    margin: 0px;
+}
+body{
+    background-color: var(--cor1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+p{
+    margin: 15px 0;
+    font-size: 1.4em;
+}
+h1{
+      font-family: 'idroif', Helvetica, sans-serif;
+      text-align: justify;
+}
+a.externo::after{
+    content: '\00A0\1f517';
+}
+header {
+    background-image: linear-gradient(180deg, #1fb86c,#034323);
+    width: 100%;
+}
+#titulo{
+    width: 150px;
+    text-align:center;
+    display: inline;
+    padding-bottom: 30px;
+}
+nav{
+    padding: 10px; 
+    text-align: justify;
+    box-shadow:0px 17px 40px rgba(0, 0, 0, 0.415);
+}
+nav > a{
+
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 10px;
+}
+nav > a:hover {
+   background-color: var(--cor1);
+   transition: 1s;
+}
+main{
+    display: block;
+    background-color: white;
+    color: #12653c;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgb(132, 132, 132);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+main > h2{
+      font-family: 'idroid', Helvetica, sans-serif;
+      text-align: start;
+      background: linear-gradient(to right, var(--cor1), transparent);
+      width: 95%;
+      display: inline-flex;
+}
+main > p{
+    color: #000000;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 24px;
+}
+main image{
+    width: 100%;
+}
+main strong{
+    color: var(--cor3);
+}
+main a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor3);
+    background-color: var(--cor1);
+    padding: 2px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+div.video{
+    background-color: var(--cor4);
+}
+aside{
+    background-color: #90ee9086;
+    border-radius: 10px;
+    color: #000000;
+    text-align: justify;
+    
+}
+aside > h3{
+    background-color: #1fb86c;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    text-align: justify;
+    padding: 10px;
+}
+aside > p{
+    padding: 0px 20px 0 20px;
+}
+ul{
+    list-style: '\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+footer{
+    background-color: var(--cor4);
+    padding: 4px;
+}
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
