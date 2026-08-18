@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fundo 3</title>
     <style>
-       
+       #container {
+            background-image: url(imagem/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 80vh;
+            padding: 10px;
+            background-color: purple;
+       }
+       #conteudo {
+            background-image: url(imagem/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            opacity: 0.7;;
+       }
     </style>
 </head>
 <body>
@@ -16,5 +39,10 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum qui harum vel tempora? Tenetur iste esse soluta dolorem recusandae, explicabo, odit sapiente voluptatem, saepe laudantium assumenda sunt maiores necessitatibus!
         </p>
     </main>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
