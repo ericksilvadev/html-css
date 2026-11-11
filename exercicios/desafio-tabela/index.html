@@ -14,6 +14,10 @@
             margin-top: 1em;
             padding: 1em;
         }
+        th{
+            background-color: gray;
+            color: white;
+        }
         td{
             width: 50px;
             text-align: center;
@@ -139,25 +143,59 @@
     </table>
     <table>
         <thead>
-            <th rowspan="5">Área</th>
-            <th rowspan="4">Disciplina</th>
-            <th>Notas</th>
-            <th rowspan="2">Média</th>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+             <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
         </thead>
       <tbody>
         <tr>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
-        </tr>
-        <tr>
-            <td>Exatas</td>
+            <td  rowspan="4">Exatas</td>
             <td>Matemática</td>
             <td>0.0</td>
             <td>0.0</td>
             <td>0.0</td>
         </tr>
+         <tr>
+            <td>Fisica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+         <tr>
+            <td>Quimica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+         <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
         <tr>
-            <th>Média de Exatas</th>
+            <th colspan="4">Média de Exatas</th>
+            <th>0.0</th>
+        </tr>
+        <tr>
+            <td  rowspan="2">Humanas</td>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
         </tr>
       </tbody>
     </table>
